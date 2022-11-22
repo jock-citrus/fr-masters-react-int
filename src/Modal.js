@@ -1,5 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
+import * as moment from 'moment';
+
+// Because only used in Modal, this will be lazy loaded
+// with the Modal
+console.log(moment)
 
 const Modal = ({ children }) => {
   const elRef = useRef(null);
